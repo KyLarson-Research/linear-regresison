@@ -1,0 +1,5 @@
+x = c(6,7,7,8,10,10,11,12,14,15,16)
+y = c(55,40,50,41,35,28,38,32,28,18,13)
+mod = lm(y~x)
+summary(mod)
+predict(mod, data.frame(x=13), interval = "confidence")
